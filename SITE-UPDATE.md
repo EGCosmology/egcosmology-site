@@ -1,5 +1,12 @@
 # Site update summary — egcosmology.com
 
+## v2.7 — CMB ↔ redshift overlay status
+
+Updated the public site to record Tom Young’s decision: current offline tests comparing Pantheon+ δμ and CatWISE density with Planck SMICA, Commander, and NILC found null pixel correlations, scale sweeps, and C<sub>ℓ</sub> versus rotation nulls. The overlay is not treated as an established result; the EGC framework, OU/TU/OUEH framing, Figshare deposits, roadmap, and other motifs remain in place. Contact remains `tom@young01.xyz`.
+
+Files changed: `index.html`, `predictions.html`, `cmb-map.html`, `papers/egc-cmb-redshift-correlation-outline.html`, `faq.html`, and `what-is-egc.html`.
+
+
 **Draft location:** `/workspace/egcosmology-site/`  
 **Zip:** `/workspace/egcosmology-site-v2.zip`  
 **Date:** 2026-09-23 (PT)  
@@ -95,7 +102,7 @@ Outline includes: title, abstract sketch, EGC motivation, datasets, method sketc
 | Page | Key changes |
 |------|-------------|
 | `reading.html` | Research path grid; link to CMB outline |
-| `predictions.html` | Next empirical focus callout; primary check links outline |
+| `predictions.html` | Overlay status callout; links to the outline |
 | `index.html` | Explore / path cards; latest-reading card |
 | `what-is-egc.html` | Test-program claim + glossary note link outline |
 | `faq.html` | Reading path + roadmap / proof FAQs point to outline |
@@ -152,7 +159,7 @@ Source extracts (text only; originals not modified) under `/workspace/egc-source
 
 Authoritative framing sources (already extracted under `/workspace/egc-source/`):
 
-1. `Dark_Energy_actual_state.txt` — External Gravitational Forces as unifying answer; OU / The Universe / OUEH; JWST high-z SMBHs as edge/older objects; CMB as averaged mass-energy "hum" / forest-trunks analogy; redshift↔CMB overlay as proof path; neighbourhood mapping beyond OUEH. Renewal/rebirth musing labelled **speculation** only (short FAQ note; omitted from core claims).
+1. `Dark_Energy_actual_state.txt` — External Gravitational Forces as unifying answer; OU / The Universe / OUEH; JWST high-z SMBHs as edge/older objects; CMB as averaged mass-energy "hum" / forest-trunks analogy; proposed redshift↔CMB overlay check; neighbourhood mapping beyond OUEH. Renewal/rebirth musing labelled **speculation** only (short FAQ note; omitted from core claims).
 2. `Document_1.txt` — Vocabulary recap (The Universe / Our Universe / OUEH; uneven pulls; redshift as motion toward horizon; early giants as edge-dwellers; acceleration from closing on external masses). Personal/recruiting chatter (virologist hunt, etc.) **excluded**. Handle normalised to `@universerethink`.
 3. Existing site pages + `egc-short.txt` (Figshare short-paper abstract) — scientific claims unchanged; vernacular polished for academic/professional public tone.
 
@@ -162,7 +169,7 @@ Authoritative framing sources (already extracted under `/workspace/egc-source/`)
 |------|----------------|
 | `index.html` | "State of the argument" lead (External Gravitational Forces); how-the-pieces-fit cards; sharpened briefing (OU/TU/OUEH, CMB hum, closing-on-masses); primary check = redshift↔CMB overlay |
 | `what-is-egc.html` | EGF answer lead; core vocabulary cards; claims for uneven pulls, acceleration from closing distances, edge-dwellers; glossary entry for External Gravitational Forces |
-| `predictions.html` | Primary proof path = redshift↔CMB overlay; high-z as edge-dwellers; new neighbourhood-mapping check |
+| `predictions.html` | Earlier draft elevated the redshift↔CMB overlay; current page records its unsupported status alongside other checks |
 | `compare.html` | Rows sharpened for EGF pull-not-push, CMB hum, edge-dwellers, beyond-horizon mapping |
 | `faq.html` | New Qs on EGF, redshift, JWST edge-dwellers, neighbourhood mapping; labelled speculation FAQ on renewal; reading path updated |
 | `css/styles.css` | `.answer-lead`, `.state-list`, `.vocab-grid` / `.vocab-card` |

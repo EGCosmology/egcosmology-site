@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CMB &amp; redshift residual maps — External Gravity Cosmology</title>
-  <meta name="description" content="Reference map facts for Planck PR3 SMICA temperature extrema and Pantheon+ directional distance-modulus residuals. Overlay products for offline correlation work — not EGC proof claims.">
+  <title>CMB map reference — External Gravity Cosmology</title>
+  <meta name="description" content="Data reference for the Planck PR3 SMICA temperature map used in planned offline CMB↔redshift work: product links, Mollweide visuals, and masked mild-smoothed extrema. No correlation results claimed.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
   <style>
@@ -24,21 +24,31 @@
     }
     .data-table {
       width: 100%;
-      border-collapse: collapse;
-      font-size: 0.88rem;
-      margin: 1rem 0 1.75rem;
       overflow-x: auto;
-      display: block;
-    }
-    .data-table table { width: 100%; border-collapse: collapse; }
-    .data-table th, .data-table td {
+      margin: 1rem 0 1.75rem;
       border: 1px solid var(--border);
-      padding: 0.45rem 0.55rem;
+      border-radius: var(--radius);
+      background: var(--bg-card);
+    }
+    .data-table table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 36rem; }
+    .data-table th, .data-table td {
+      border-bottom: 1px solid var(--border);
+      padding: 0.5rem 0.65rem;
       text-align: right;
       white-space: nowrap;
     }
+    .data-table tr:last-child td { border-bottom: none; }
     .data-table th:first-child, .data-table td:first-child { text-align: center; }
-    .data-table th { background: var(--bg-card); color: var(--text-muted); font-weight: 600; }
+    .data-table th {
+      background: var(--bg-elevated);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .link-list { margin: 0.75rem 0 1.25rem; padding-left: 1.2rem; }
+    .link-list li { margin: 0.35rem 0; }
     .method-box code { font-size: 0.85em; }
   </style>
 </head>
@@ -71,12 +81,13 @@
 
   <main id="main">
     <section class="hero">
-      <p class="hero-kicker">Reference map products</p>
-      <h1>CMB &amp; redshift residual maps</h1>
+      <p class="hero-kicker">Data reference</p>
+      <h1>CMB map reference</h1>
       <p class="hero-lead">
-        Public Planck SMICA and Pantheon+ products reprojected for sky overlay.
-        Tables below list mild-smoothed extrema for orientation. Correlation analysis
-        remains offline; nothing on this page claims an EGC proof.
+        Which public Planck maps and masks are used for planned offline CMB↔redshift
+        overlay work, how they look in Galactic Mollweide projection, and the strongest
+        hot and cold extrema of the masked SMICA temperature map. No correlation results,
+        p-values, or unfinished analysis are presented here.
       </p>
       <div class="cta-row">
         <a class="btn btn-primary" href="papers/egc-cmb-redshift-correlation-outline.html">CMB↔redshift outline</a>
@@ -87,42 +98,90 @@
 
     <section class="section narrow">
       <div class="callout callout-warn">
-        <strong>Map facts only</strong>
+        <strong>Reference products only</strong>
         <p>
-          Extrema and Mollweide images are <em>reference products</em> derived from
-          official public catalogs. They support visual and offline statistical overlay
+          Mollweide images and extrema tables are derived from official public Planck
+          (and, below, Pantheon+) releases. They support orientation and offline overlay
           work. Favourable or discordant patterns would be interpreted only after a
           documented null test — not asserted here as completed correlation results.
         </p>
       </div>
     </section>
 
+    <section class="section narrow" aria-labelledby="products-heading">
+      <h2 id="products-heading">Primary products</h2>
+      <p class="lede">
+        The working baseline is the Planck Public Data Release 3 (PR3) SMICA
+        temperature anisotropy map in HEALPix format. PR4 / NPIPE releases are reserved
+        as cross-checks. Visuals use Galactic coordinates in Mollweide projection.
+        The Planck common intensity mask excludes the Galactic plane and other
+        contaminated regions for extrema reported below.
+      </p>
+      <ul class="link-list">
+        <li>
+          <strong>SMICA CMB map (PR3 full-mission IQU):</strong>
+          product ID <code>COM_CMB_IQU-smica_2048_R3.00_full</code>
+          —
+          <a href="https://irsa.ipac.caltech.edu/data/Planck/release_3/all-sky-maps/maps/component-maps/cmb/COM_CMB_IQU-smica_2048_R3.00_full.fits" rel="noopener noreferrer">IRSA / LAMBDA FITS download</a>
+          ·
+          <a href="https://irsa.ipac.caltech.edu/data/Planck/release_3/all-sky-maps/previews/COM_CMB_IQU-smica_2048_R3.00_full/index.html" rel="noopener noreferrer">product preview</a>
+          ·
+          <a href="https://pla.esac.esa.int/pla/#home" rel="noopener noreferrer">ESA Planck Legacy Archive portal</a>
+          (search the same product ID if a deep archive URL changes).
+        </li>
+        <li>
+          <strong>Common intensity mask:</strong>
+          product ID <code>COM_Mask_CMB-common-Mask-Int_2048_R3.00</code>
+          —
+          <a href="https://irsa.ipac.caltech.edu/data/Planck/release_3/ancillary-data/masks/COM_Mask_CMB-common-Mask-Int_2048_R3.00.fits" rel="noopener noreferrer">IRSA FITS download</a>
+          ·
+          <a href="https://irsa.ipac.caltech.edu/data/Planck/release_3/ancillary-data/previews/COM_Mask_CMB-common-Mask-Int_2048_R3.00/index.html" rel="noopener noreferrer">preview</a>.
+        </li>
+        <li>
+          <strong>CMB map matrix (all pipelines):</strong>
+          <a href="https://irsa.ipac.caltech.edu/data/Planck/release_3/all-sky-maps/matrix_cmb.html" rel="noopener noreferrer">IRSA PR3 CMB maps matrix</a>
+          (COMMANDER, NILC, SEVEM, SMICA).
+        </li>
+      </ul>
+      <p class="note">
+        Site images below were generated locally with healpy from the public HEALPix
+        products (not hotlinked). Planck map products are cited as ESA / Planck Collaboration.
+      </p>
+    </section>
+
     <section class="section narrow" aria-labelledby="cmb-heading">
       <h2 id="cmb-heading">Planck PR3 SMICA temperature</h2>
-      <p>
-        Source:
-        <a href="https://irsa.ipac.caltech.edu/data/Planck/release_3/all-sky-maps/maps/component-maps/cmb/" rel="noopener noreferrer">IRSA Planck PR3 CMB component maps</a>
-        — product <code>COM_CMB_IQU-smica-nosz_2048_R3.00_full</code> (I_STOKES),
-        with the common intensity mask
-        <code>COM_Mask_CMB-common-Mask-Int_2048_R3.00</code>.
-        Analysis: ud_grade to NSIDE&nbsp;512, FWHM&nbsp;1° Gaussian smoothing for extrema,
-        10° exclusion between listed spots. Units: µK.
-      </p>
+      <div class="callout method-box">
+        <strong>Extrema method</strong>
+        <p>
+          Field <code>I_STOKES</code> from <code>COM_CMB_IQU-smica_2048_R3.00_full</code>
+          (native NSIDE&nbsp;2048, units K<sub>CMB</sub>). Ud-graded to NSIDE&nbsp;512.
+          Common intensity mask applied (pixels with mask&nbsp;&gt;&nbsp;0.5 retained;
+          sky fraction ≈ 77.9%).
+          Mild Gaussian smoothing of <strong>FWHM&nbsp;1°</strong> before extrema so the
+          list tracks large-scale spots rather than single noisy pixels.
+          Successive extrema use a <strong>10°</strong> exclusion disk.
+          Reported values are ΔT in <strong>µK</strong> on that smoothed, masked map.
+          Coordinates: Galactic longitude/latitude; ICRS RA/Dec via standard conversion.
+        </p>
+      </div>
 
       <figure class="map-figure">
         <img src="images/cmb-smica-mollweide.png" width="1200" height="650"
-             alt="Mollweide map of Planck PR3 SMICA-nosz CMB temperature with 1 degree smoothing and Galactic mask">
+             alt="Mollweide map of Planck PR3 SMICA CMB temperature with 1 degree smoothing and common intensity mask">
         <figcaption>
-          Mollweide projection (Galactic) of SMICA-nosz temperature after 1° FWHM smoothing,
-          common intensity mask applied. RdBu diverging scale in µK.
+          Galactic Mollweide of Planck PR3 SMICA temperature after 1° FWHM smoothing,
+          common intensity mask applied. Diverging RdBu scale in µK.
+          Map data: ESA / Planck Collaboration (PR3 SMICA); figure generated for this site.
         </figcaption>
       </figure>
 
       <figure class="map-figure">
         <img src="images/cmb-smica-mollweide-largescale.png" width="1200" height="650"
-             alt="Mollweide map of Planck SMICA temperature with 5 degree large-scale smoothing">
+             alt="Mollweide map of Planck PR3 SMICA temperature with 5 degree large-scale smoothing">
         <figcaption>
-          Same map with 5° FWHM smoothing for large-scale visual context.
+          Same product with 5° FWHM smoothing for large-scale visual context
+          (mask applied). ESA / Planck Collaboration data; site-generated figure.
         </figcaption>
       </figure>
 
@@ -133,16 +192,16 @@
             <tr><th>#</th><th>ΔT [µK]</th><th>l [°]</th><th>b [°]</th><th>RA [°]</th><th>Dec [°]</th></tr>
           </thead>
           <tbody>
-            <tr><td>1</td><td>277.54</td><td>158.02</td><td>-70.26</td><td>24.25</td><td>-10.56</td></tr>
-            <tr><td>2</td><td>267.72</td><td>138.66</td><td>78.74</td><td>189.01</td><td>37.91</td></tr>
-            <tr><td>3</td><td>261.62</td><td>267.01</td><td>-20.03</td><td>107.23</td><td>-56.44</td></tr>
-            <tr><td>4</td><td>243.45</td><td>232.82</td><td>8.84</td><td>120.19</td><td>-13.25</td></tr>
-            <tr><td>5</td><td>239.84</td><td>176.84</td><td>12.71</td><td>98.06</td><td>37.72</td></tr>
-            <tr><td>6</td><td>238.00</td><td>16.85</td><td>72.11</td><td>211.29</td><td>20.99</td></tr>
-            <tr><td>7</td><td>237.27</td><td>303.57</td><td>-29.23</td><td>357.92</td><td>-87.83</td></tr>
-            <tr><td>8</td><td>236.63</td><td>0.18</td><td>-37.83</td><td>310.71</td><td>-41.30</td></tr>
-            <tr><td>9</td><td>235.51</td><td>180.37</td><td>55.97</td><td>154.70</td><td>40.24</td></tr>
-            <tr><td>10</td><td>233.10</td><td>219.81</td><td>26.28</td><td>129.32</td><td>6.10</td></tr>
+            <tr><td>1</td><td>+276.47</td><td>158.02</td><td>-70.26</td><td>24.25</td><td>-10.56</td></tr>
+            <tr><td>2</td><td>+266.51</td><td>138.66</td><td>78.74</td><td>189.01</td><td>37.91</td></tr>
+            <tr><td>3</td><td>+265.14</td><td>267.01</td><td>-20.03</td><td>107.23</td><td>-56.44</td></tr>
+            <tr><td>4</td><td>+241.75</td><td>232.82</td><td>8.84</td><td>120.19</td><td>-13.25</td></tr>
+            <tr><td>5</td><td>+240.69</td><td>16.85</td><td>72.11</td><td>211.29</td><td>20.99</td></tr>
+            <tr><td>6</td><td>+239.81</td><td>176.84</td><td>12.71</td><td>98.06</td><td>37.72</td></tr>
+            <tr><td>7</td><td>+237.81</td><td>303.57</td><td>-29.23</td><td>357.92</td><td>-87.83</td></tr>
+            <tr><td>8</td><td>+235.02</td><td>0.18</td><td>-37.83</td><td>310.71</td><td>-41.30</td></tr>
+            <tr><td>9</td><td>+234.22</td><td>180.37</td><td>55.97</td><td>154.70</td><td>40.24</td></tr>
+            <tr><td>10</td><td>+233.70</td><td>170.20</td><td>-46.57</td><td>43.31</td><td>4.82</td></tr>
           </tbody>
         </table>
       </div>
@@ -154,25 +213,30 @@
             <tr><th>#</th><th>ΔT [µK]</th><th>l [°]</th><th>b [°]</th><th>RA [°]</th><th>Dec [°]</th></tr>
           </thead>
           <tbody>
-            <tr><td>1</td><td>-267.13</td><td>200.83</td><td>20.11</td><td>116.11</td><td>19.39</td></tr>
-            <tr><td>2</td><td>-261.10</td><td>158.29</td><td>-32.09</td><td>44.75</td><td>21.88</td></tr>
-            <tr><td>3</td><td>-260.18</td><td>325.20</td><td>-9.82</td><td>247.59</td><td>-62.79</td></tr>
-            <tr><td>4</td><td>-257.28</td><td>71.19</td><td>-13.79</td><td>315.38</td><td>25.25</td></tr>
-            <tr><td>5</td><td>-252.51</td><td>145.55</td><td>-22.75</td><td>38.70</td><td>35.54</td></tr>
-            <tr><td>6</td><td>-251.80</td><td>202.31</td><td>-56.54</td><td>47.35</td><td>-16.86</td></tr>
-            <tr><td>7</td><td>-251.33</td><td>210.76</td><td>-35.23</td><td>69.99</td><td>-13.62</td></tr>
-            <tr><td>8</td><td>-245.95</td><td>341.72</td><td>-41.51</td><td>317.47</td><td>-55.25</td></tr>
-            <tr><td>9</td><td>-243.83</td><td>313.86</td><td>-20.74</td><td>252.58</td><td>-78.16</td></tr>
-            <tr><td>10</td><td>-243.02</td><td>192.04</td><td>-14.79</td><td>79.81</td><td>10.98</td></tr>
+            <tr><td>1</td><td>-267.69</td><td>200.83</td><td>20.11</td><td>116.11</td><td>19.39</td></tr>
+            <tr><td>2</td><td>-254.80</td><td>325.20</td><td>-9.82</td><td>247.59</td><td>-62.79</td></tr>
+            <tr><td>3</td><td>-253.05</td><td>71.19</td><td>-13.79</td><td>315.38</td><td>25.25</td></tr>
+            <tr><td>4</td><td>-250.44</td><td>158.29</td><td>-32.09</td><td>44.75</td><td>21.88</td></tr>
+            <tr><td>5</td><td>-250.29</td><td>145.55</td><td>-22.75</td><td>38.70</td><td>35.54</td></tr>
+            <tr><td>6</td><td>-249.72</td><td>202.31</td><td>-56.54</td><td>47.35</td><td>-16.86</td></tr>
+            <tr><td>7</td><td>-248.52</td><td>341.72</td><td>-41.51</td><td>317.47</td><td>-55.25</td></tr>
+            <tr><td>8</td><td>-247.45</td><td>192.04</td><td>-14.79</td><td>79.81</td><td>10.98</td></tr>
+            <tr><td>9</td><td>-246.82</td><td>210.76</td><td>-35.23</td><td>69.99</td><td>-13.62</td></tr>
+            <tr><td>10</td><td>-241.84</td><td>313.95</td><td>-20.66</td><td>252.49</td><td>-78.04</td></tr>
           </tbody>
         </table>
       </div>
+      <p class="note">
+        These are local extrema of the public map under the stated mask and 1° smoothing,
+        separated by ≥10°. They are not claimed as cosmologically unique “spots” beyond
+        that operational definition, and they are not EGC correlation results.
+      </p>
     </section>
 
-    <section class="section narrow" aria-labelledby="sn-heading">
+    <section class="section narrow" id="redshift-residuals" aria-labelledby="sn-heading">
       <h2 id="sn-heading">Pantheon+ directional distance-modulus residuals</h2>
       <p>
-        Source:
+        Companion sky product for the same planned overlay program. Source:
         <a href="https://github.com/PantheonPlusSH0ES/DataRelease" rel="noopener noreferrer">PantheonPlusSH0ES/DataRelease</a>
         — file <code>Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES.dat</code>
         (Scolnic et al. 2022; cosmology context Brout et al. 2022).
@@ -241,19 +305,13 @@
       </div>
     </section>
 
-    <section class="section narrow">
-      <h2>Offline products &amp; caveats</h2>
+    <section class="section narrow" aria-labelledby="offline-heading">
+      <h2 id="offline-heading">Offline correlation work</h2>
       <p>
-        Machine-readable maps and extrema JSON live in the offline EGC workspace
-        (<code>egc-offline/cmb-redshift/</code>): NPZ/FITS residual maps,
-        <code>redshift_residuals_extrema.json</code>, <code>cmb_smica_extrema.json</code>,
-        and the PNGs mirrored under <code>images/</code> on this site.
-      </p>
-      <p class="note">
-        These products are intended for CMB↔redshift overlay studies described in the
-        <a href="papers/egc-cmb-redshift-correlation-outline.html">draft outline</a>.
-        No finished cross-correlation statistic or EGC confirmation is claimed on this page.
-        Contact: <a href="mailto:tom@young01.xyz">tom@young01.xyz</a>.
+        The planned CMB↔redshift directional study is described in the
+        <a href="papers/egc-cmb-redshift-correlation-outline.html">draft paper outline</a>.
+        Correlation analysis itself remains offline; this page supplies map reference
+        material only. Contact: <a href="mailto:tom@young01.xyz">tom@young01.xyz</a>.
       </p>
     </section>
   </main>

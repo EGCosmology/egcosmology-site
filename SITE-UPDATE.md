@@ -6,6 +6,34 @@
 **Contact locked to:** `tom@young01.xyz` only  
 **X handle:** `@universerethink` (consistent with live site)
 
+## v2.6 — CMB map reference (+ redshift residual hook)
+
+Public data-reference page for Planck PR3 SMICA (and companion Pantheon+ residual map section) used in planned offline CMB↔redshift work. No correlation results or p-values.
+
+### New / updated
+
+| Path | Role |
+|------|------|
+| `cmb-map.html` | CMB map reference: product links, Mollweide plots, top-10 hot/cold extrema; Pantheon+ residual section |
+| `images/cmb-smica-mollweide.png` | Masked SMICA, 1° FWHM |
+| `images/cmb-smica-mollweide-largescale.png` | Masked SMICA, 5° FWHM |
+| `images/cmb-smica-mollweide-unmasked.png` | Full-sky 1° (optional asset) |
+| `images/pantheonplus-residual-mollweide*.png` | Pantheon+ δμ maps (companion section) |
+
+### Method (CMB)
+
+- Product: `COM_CMB_IQU-smica_2048_R3.00_full` (I_STOKES); mask `COM_Mask_CMB-common-Mask-Int_2048_R3.00`
+- Ud_grade NSIDE 2048→512; FWHM 1° for extrema; 10° exclusion; units µK
+- PR3 working baseline; PR4/NPIPE noted as cross-check
+- Nav: “CMB map” on all main pages + outline
+
+### Untouched (by design)
+
+- No EGC correlation claims / p-values on the page  
+- Contact remains `tom@young01.xyz`
+
+---
+
 ## v2.5 — Visitor voice (no internal memo / no internal labels)
 
 Tom Young: *“You have written like you are talking to yourself. Fix it.”* Plus hard rule: internal collaborator filing labels must not appear in any public / visitor-facing text (HTML, SITE-UPDATE, CMB outline HTML/MD). Refer only to collaborator notes / working manuscripts / research notes.

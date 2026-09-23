@@ -6,6 +6,44 @@
 **Contact locked to:** `tom@young01.xyz` only  
 **X handle:** `@universerethink` (consistent with live site)
 
+## v2.4 — Elevate Ari research hierarchy + CMB↔redshift outline
+
+Tom Young (EGC author) agreed the strategy and said “make it so.”
+
+### Hierarchy (public path)
+
+1. **Conceptual door** — manifesto / *Rethinking the Universe* (Ari Tom Edits / milestone-1 lineage), summarised in site voice  
+2. **Math invitation** — mathematical modeling **scaffolding** (not finished theory)  
+3. **Public research face** — milestone 3 *Toward Testing External Gravity Cosmology* (Planck, Pantheon+, SDSS/CatWISE, DESI/Euclid, JWST, GW)  
+4. **Next empirical focus** — one crisp fight: CMB temperature/anisotropy ↔ directional redshift residuals, with explicit null / falsification  
+
+### New artifacts
+
+| Path | Role |
+|------|------|
+| `papers/egc-cmb-redshift-correlation-outline.html` | Site-voice draft paper outline (Young framing) |
+| `/workspace/egc-source/drafts/EGC_CMB_redshift_correlation_outline.md` | Plain markdown twin of the outline |
+
+Outline includes: title, abstract sketch, EGC motivation, datasets, method sketch, **null + falsification**, systematics, deliverables, “not claimed yet” boundaries.
+
+### Pages touched (v2.4)
+
+| Page | Key changes |
+|------|-------------|
+| `reading.html` | Research hierarchy path-grid; link to CMB outline |
+| `predictions.html` | Next empirical focus callout; primary check links outline; quieted mechanism digression |
+| `index.html` | How-to-read path = door → scaffolding → research face → outline; latest-reading card |
+| `what-is-egc.html` | Test-program claim + glossary note link outline |
+| `faq.html` | Reading path + roadmap / proof FAQs point to outline |
+| `SITE-UPDATE.md` | This note |
+
+### Untouched (by design)
+
+- **Ari binaries** under `/workspace/egc-source/state-of-things/Ari/` — not rewritten  
+- No invented physics beyond Figshare + collaborating roadmap summaries  
+- Contact remains `tom@young01.xyz`  
+- Redshift-mechanism debates not hammered; site describes external gravity / testable correlations without restyling Ari  
+
 ## v2.3 — Ari / milestone fold-in (site voice only)
 
 Source extracts (text only; originals not modified) under `/workspace/egc-source/state-of-things/extracts/`:

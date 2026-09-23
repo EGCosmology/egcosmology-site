@@ -1,4 +1,4 @@
-# Site update summary — egcosmology.com v2
+# Site update summary — egcosmology.com
 
 **Draft location:** `/workspace/egcosmology-site/`  
 **Zip:** `/workspace/egcosmology-site-v2.zip`  
@@ -6,16 +6,52 @@
 **Contact locked to:** `tom@young01.xyz` only  
 **X handle:** `@universerethink` (consistent with live site)
 
-## v2.4 — Elevate Ari research hierarchy + CMB↔redshift outline
+## v2.5 — Visitor voice (no internal memo / no internal labels)
+
+Tom Young: *“You have written like you are talking to yourself. Fix it.”* Plus hard rule: internal collaborator filing labels must not appear in any public / visitor-facing text (HTML, SITE-UPDATE, CMB outline HTML/MD). Refer only to collaborator notes / working manuscripts / research notes.
+
+### Voice changes
+
+- Dropped meta taxonomy: door / face / hierarchy / fight / “how this site organises” / “How to read this page” as filing narration.
+- Ordinary labels: **Start here · Concepts · Observational tests · Working notes · Draft study outline**.
+- Home “How to read this site” → **Explore** (cards describe content, not taxonomy).
+- Reading page: suggested order concepts → tests → maths notes → draft CMB–redshift study; no architecture lecture; no collaborator-file policy asides.
+- “Scaffolding” no longer used as a brand; exploratory / preliminary maths may be labelled once.
+- Third person / impersonal; science kept (OU/TU/OUEH, External Gravitational Forces, Planck/Pantheon+/etc.).
+- Collaborator source binaries under the private source tree remain **not rewritten**.
+
+### Pages / files touched (v2.5)
+
+| Path | Change |
+|------|--------|
+| `index.html` | Explore cards; observational-program copy; latest-reading card |
+| `reading.html` | Suggested reading order; quieter notes |
+| `predictions.html` | About-these-checks; priority draft study; survey-notes wording |
+| `faq.html` | Maths status; datasets; where-to-start order |
+| `what-is-egc.html` | Claims + glossary; suggested order |
+| `compare.html` | Maths/data row wording |
+| `papers/egc-cmb-redshift-correlation-outline.html` | Related material; focused-test wording |
+| `/workspace/egc-source/drafts/EGC_CMB_redshift_correlation_outline.md` | Matching tone scrub |
+| `SITE-UPDATE.md` | This note; internal filing labels removed from public text |
+
+### Untouched (by design)
+
+- Collaborator source binaries in the private source tree — not rewritten  
+- No invented physics beyond Figshare + collaborator roadmap summaries  
+- Contact remains `tom@young01.xyz`
+
+---
+
+## v2.4 — Elevate research path + CMB↔redshift outline
 
 Tom Young (EGC author) agreed the strategy and said “make it so.”
 
-### Hierarchy (public path)
+### Public path (now ordinary labels in v2.5)
 
-1. **Conceptual door** — manifesto / *Rethinking the Universe* (Ari Tom Edits / milestone-1 lineage), summarised in site voice  
-2. **Math invitation** — mathematical modeling **scaffolding** (not finished theory)  
-3. **Public research face** — milestone 3 *Toward Testing External Gravity Cosmology* (Planck, Pantheon+, SDSS/CatWISE, DESI/Euclid, JWST, GW)  
-4. **Next empirical focus** — one crisp fight: CMB temperature/anisotropy ↔ directional redshift residuals, with explicit null / falsification  
+1. **Concepts** — manifesto / *Rethinking the Universe* lineage, summarised in site voice  
+2. **Working notes** — exploratory mathematical modeling (not finished theory)  
+3. **Observational tests** — *Toward Testing External Gravity Cosmology* (Planck, Pantheon+, SDSS/CatWISE, DESI/Euclid, JWST, GW)  
+4. **Draft study outline** — CMB temperature/anisotropy ↔ directional redshift residuals, with explicit null / falsification  
 
 ### New artifacts
 
@@ -30,42 +66,42 @@ Outline includes: title, abstract sketch, EGC motivation, datasets, method sketc
 
 | Page | Key changes |
 |------|-------------|
-| `reading.html` | Research hierarchy path-grid; link to CMB outline |
-| `predictions.html` | Next empirical focus callout; primary check links outline; quieted mechanism digression |
-| `index.html` | How-to-read path = door → scaffolding → research face → outline; latest-reading card |
+| `reading.html` | Research path grid; link to CMB outline |
+| `predictions.html` | Next empirical focus callout; primary check links outline |
+| `index.html` | Explore / path cards; latest-reading card |
 | `what-is-egc.html` | Test-program claim + glossary note link outline |
 | `faq.html` | Reading path + roadmap / proof FAQs point to outline |
 | `SITE-UPDATE.md` | This note |
 
 ### Untouched (by design)
 
-- **Ari binaries** under `/workspace/egc-source/state-of-things/Ari/` — not rewritten  
-- No invented physics beyond Figshare + collaborating roadmap summaries  
+- Collaborator source binaries in the private source tree — not rewritten  
+- No invented physics beyond Figshare + collaborator roadmap summaries  
 - Contact remains `tom@young01.xyz`  
-- Redshift-mechanism debates not hammered; site describes external gravity / testable correlations without restyling Ari  
+- Redshift-mechanism debates not hammered; site describes external gravity / testable correlations without restyling collaborator manuscripts  
 
-## v2.3 — Ari / milestone fold-in (site voice only)
+## v2.3 — Collaborator / roadmap fold-in (site voice only)
 
 Source extracts (text only; originals not modified) under `/workspace/egc-source/state-of-things/extracts/`:
 
-- Ari / collaborating notes: `Ari_Tom_Edits.txt`, `milestone1.txt`, `mathematical_modeling.txt`, `milestone3.txt`, `milestone4.txt`, `Secrest_2021.txt`
+- Collaborator / research notes: Tom-edits extract, milestone1, mathematical_modeling, milestone3, milestone4, Secrest_2021  
 - Top drafts: `EGC_short_version.docx.txt`, `Dark_Energy_actual_state_2.txt`, `Dark_Energy_misperception.txt`, `Grok_summary_3_21_2025.txt`, `Conversation_dark_energy_matter.txt`, `Universal_Rethink_The_Book.txt`, `conversation_Grok_1_CoPilot.txt`
 
-**Voice rule:** Collaborator (Ari) articles/manuscripts keep their original wording and tone. The site summarises ideas in its own professional academic voice or points readers to request documents — it does **not** paste rewritten Ari prose or restyle Ari source files.
+**Voice rule:** Collaborator articles/manuscripts keep their original wording and tone. The site summarises ideas in its own professional academic voice or points readers to request documents — it does **not** paste rewritten collaborator prose or restyle collaborator source files.
 
 ### Folded in (new themes)
 
 - Careful Secrest et al. (2021) / CatWISE quasar-dipole context as **already cited** in the EGC Figshare short paper — motivating anisotropy literature, not an EGC proof claim
 - Cosmological-principle tension framed as expected under anisotropic TU (compare + FAQ)
-- Exploratory mathematical scaffolding status (Φ / directional δz~δTCMB program) labelled scaffolding, not finished theory
+- Exploratory mathematical notes status (Φ / directional δz~δTCMB program) labelled exploratory / preliminary, not finished theory
 - Distributed research roadmap datasets: Planck, Pantheon+, SDSS/CatWISE, DESI/Euclid, JWST, longer-term GW anisotropy (predictions + FAQ + reading notes)
-- Reading page notes path: manifesto → scaffolding → roadmap → invitation (summary only)
+- Reading page notes path: concepts → notes → roadmap → invitation (summary only)
 
 ### Pages touched (v2.3)
 
 | Page | Key changes |
 |------|-------------|
-| `what-is-egc.html` | Abstract to impersonal site voice; claims + glossary for anisotropy literature, scaffolding, CP context |
+| `what-is-egc.html` | Abstract to impersonal site voice; claims + glossary for anisotropy literature, maths notes, CP context |
 | `index.html` | State-of-argument items for Secrest-cited dipole context + data program |
 | `predictions.html` | Secrest caution on dipole check; new survey cross-check + GW-horizon proposals |
 | `compare.html` | Rows for cosmological principle + math/data program |
@@ -77,12 +113,12 @@ Source extracts (text only; originals not modified) under `/workspace/egc-source
 
 ### Deliberately left out
 
-- No rewritten / restyled Ari manuscript text on the site
+- No rewritten / restyled collaborator manuscript text on the site
 - No tired-light / tired-gravity framing as EGC’s identity (redshift kept as observed fact / mechanism-open)
 - Informal Grok chat logs, book outlines, recruiting/personal chatter, vulgar draft language
 - Hawking / “renewal” speculation beyond the existing labelled FAQ note
 - Overclaim that Secrest (or any single dipole paper) proves EGC
-- Asserting gravitational-redshift equations as settled site doctrine (scaffolding only)
+- Asserting gravitational-redshift equations as settled site doctrine (exploratory notes only)
 
 ## v2.2 — OneDrive draft enrichment (not published)
 
@@ -109,7 +145,7 @@ Contact, reading, and publish kit pages unchanged in substance (`contact.html`, 
 ## v2 redo (vs v1 draft)
 
 1. **Expanded IA** — New pages: `predictions.html`, `compare.html`, `faq.html`. Nav covers Home · What is EGC · Predictions · Compare · Reading · FAQ · Contact.
-2. **Clearer hierarchy** — Home now leads claim → why it matters → evidence/proposal → reading, plus a how-to-read path and latest-reading CTAs.
+2. **Clearer structure** — Home now leads claim → why it matters → evidence/proposal → reading, plus an Explore path and latest-reading CTAs.
 3. **Glossary** — OU, TU, OUEH, EGC on What is EGC.
 4. **Predictions page** — CMB↔IR, anisotropy/dipoles, high-z timing framed as proposals with "supports / pressures" hedges — not completed proofs.
 5. **ΛCDM contrast** — Careful table: what each posits; EGC labelled alternative proposal.

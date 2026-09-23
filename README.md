@@ -7,7 +7,7 @@ Local files only until published. Preferred free path: **GitHub Pages** (see `GI
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Hero, key claims, claim→why→proposal→reading hierarchy, briefing, CTAs |
+| `index.html` | Hero, key claims, claim → why → proposal → reading, briefing, CTAs |
 | `what-is-egc.html` | Formal abstract, structured claims, glossary (OU, TU, OUEH, EGC) |
 | `predictions.html` | Proposed observational checks (not claimed proofs) |
 | `compare.html` | Careful ΛCDM vs EGC contrast table |

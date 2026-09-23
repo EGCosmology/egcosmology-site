@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CMB &amp; redshift residual maps — External Gravity Cosmology</title>
+  <meta name="description" content="Reference map facts for Planck PR3 SMICA temperature extrema and Pantheon+ directional distance-modulus residuals. Overlay products for offline correlation work — not EGC proof claims.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .map-figure { margin: 1.25rem 0 1.75rem; }
+    .map-figure img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+    .map-figure figcaption {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-top: 0.6rem;
+      line-height: 1.45;
+    }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin: 1rem 0 1.75rem;
+      overflow-x: auto;
+      display: block;
+    }
+    .data-table table { width: 100%; border-collapse: collapse; }
+    .data-table th, .data-table td {
+      border: 1px solid var(--border);
+      padding: 0.45rem 0.55rem;
+      text-align: right;
+      white-space: nowrap;
+    }
+    .data-table th:first-child, .data-table td:first-child { text-align: center; }
+    .data-table th { background: var(--bg-card); color: var(--text-muted); font-weight: 600; }
+    .method-box code { font-size: 0.85em; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="favicon.svg" width="32" height="32" alt="">
+        <span class="brand-text">
+          <span class="brand-name">External Gravity Cosmology</span>
+          <span class="brand-sub">EGC · Tom Young</span>
+        </span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="what-is-egc.html">What is EGC</a>
+        <a href="predictions.html">Predictions</a>
+        <a href="compare.html">Compare</a>
+        <a href="reading.html">Reading</a>
+        <a href="cmb-map.html" aria-current="page">CMB map</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <p class="hero-kicker">Reference map products</p>
+      <h1>CMB &amp; redshift residual maps</h1>
+      <p class="hero-lead">
+        Public Planck SMICA and Pantheon+ products reprojected for sky overlay.
+        Tables below list mild-smoothed extrema for orientation. Correlation analysis
+        remains offline; nothing on this page claims an EGC proof.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="papers/egc-cmb-redshift-correlation-outline.html">CMB↔redshift outline</a>
+        <a class="btn btn-secondary" href="predictions.html">Predictions</a>
+        <a class="btn btn-ghost" href="mailto:tom@young01.xyz">tom@young01.xyz</a>
+      </div>
+    </section>
+
+    <section class="section narrow">
+      <div class="callout callout-warn">
+        <strong>Map facts only</strong>
+        <p>
+          Extrema and Mollweide images are <em>reference products</em> derived from
+          official public catalogs. They support visual and offline statistical overlay
+          work. Favourable or discordant patterns would be interpreted only after a
+          documented null test — not asserted here as completed correlation results.
+        </p>
+      </div>
+    </section>
+
+    <section class="section narrow" aria-labelledby="cmb-heading">
+      <h2 id="cmb-heading">Planck PR3 SMICA temperature</h2>
+      <p>
+        Source:
+        <a href="https://irsa.ipac.caltech.edu/data/Planck/release_3/all-sky-maps/maps/component-maps/cmb/" rel="noopener noreferrer">IRSA Planck PR3 CMB component maps</a>
+        — product <code>COM_CMB_IQU-smica-nosz_2048_R3.00_full</code> (I_STOKES),
+        with the common intensity mask
+        <code>COM_Mask_CMB-common-Mask-Int_2048_R3.00</code>.
+        Analysis: ud_grade to NSIDE&nbsp;512, FWHM&nbsp;1° Gaussian smoothing for extrema,
+        10° exclusion between listed spots. Units: µK.
+      </p>
+
+      <figure class="map-figure">
+        <img src="images/cmb-smica-mollweide.png" width="1200" height="650"
+             alt="Mollweide map of Planck PR3 SMICA-nosz CMB temperature with 1 degree smoothing and Galactic mask">
+        <figcaption>
+          Mollweide projection (Galactic) of SMICA-nosz temperature after 1° FWHM smoothing,
+          common intensity mask applied. RdBu diverging scale in µK.
+        </figcaption>
+      </figure>
+
+      <figure class="map-figure">
+        <img src="images/cmb-smica-mollweide-largescale.png" width="1200" height="650"
+             alt="Mollweide map of Planck SMICA temperature with 5 degree large-scale smoothing">
+        <figcaption>
+          Same map with 5° FWHM smoothing for large-scale visual context.
+        </figcaption>
+      </figure>
+
+      <h3>Top 10 hot spots (1° smoothed, masked)</h3>
+      <div class="data-table">
+        <table>
+          <thead>
+            <tr><th>#</th><th>ΔT [µK]</th><th>l [°]</th><th>b [°]</th><th>RA [°]</th><th>Dec [°]</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>277.54</td><td>158.02</td><td>-70.26</td><td>24.25</td><td>-10.56</td></tr>
+            <tr><td>2</td><td>267.72</td><td>138.66</td><td>78.74</td><td>189.01</td><td>37.91</td></tr>
+            <tr><td>3</td><td>261.62</td><td>267.01</td><td>-20.03</td><td>107.23</td><td>-56.44</td></tr>
+            <tr><td>4</td><td>243.45</td><td>232.82</td><td>8.84</td><td>120.19</td><td>-13.25</td></tr>
+            <tr><td>5</td><td>239.84</td><td>176.84</td><td>12.71</td><td>98.06</td><td>37.72</td></tr>
+            <tr><td>6</td><td>238.00</td><td>16.85</td><td>72.11</td><td>211.29</td><td>20.99</td></tr>
+            <tr><td>7</td><td>237.27</td><td>303.57</td><td>-29.23</td><td>357.92</td><td>-87.83</td></tr>
+            <tr><td>8</td><td>236.63</td><td>0.18</td><td>-37.83</td><td>310.71</td><td>-41.30</td></tr>
+            <tr><td>9</td><td>235.51</td><td>180.37</td><td>55.97</td><td>154.70</td><td>40.24</td></tr>
+            <tr><td>10</td><td>233.10</td><td>219.81</td><td>26.28</td><td>129.32</td><td>6.10</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Top 10 cold spots (1° smoothed, masked)</h3>
+      <div class="data-table">
+        <table>
+          <thead>
+            <tr><th>#</th><th>ΔT [µK]</th><th>l [°]</th><th>b [°]</th><th>RA [°]</th><th>Dec [°]</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>-267.13</td><td>200.83</td><td>20.11</td><td>116.11</td><td>19.39</td></tr>
+            <tr><td>2</td><td>-261.10</td><td>158.29</td><td>-32.09</td><td>44.75</td><td>21.88</td></tr>
+            <tr><td>3</td><td>-260.18</td><td>325.20</td><td>-9.82</td><td>247.59</td><td>-62.79</td></tr>
+            <tr><td>4</td><td>-257.28</td><td>71.19</td><td>-13.79</td><td>315.38</td><td>25.25</td></tr>
+            <tr><td>5</td><td>-252.51</td><td>145.55</td><td>-22.75</td><td>38.70</td><td>35.54</td></tr>
+            <tr><td>6</td><td>-251.80</td><td>202.31</td><td>-56.54</td><td>47.35</td><td>-16.86</td></tr>
+            <tr><td>7</td><td>-251.33</td><td>210.76</td><td>-35.23</td><td>69.99</td><td>-13.62</td></tr>
+            <tr><td>8</td><td>-245.95</td><td>341.72</td><td>-41.51</td><td>317.47</td><td>-55.25</td></tr>
+            <tr><td>9</td><td>-243.83</td><td>313.86</td><td>-20.74</td><td>252.58</td><td>-78.16</td></tr>
+            <tr><td>10</td><td>-243.02</td><td>192.04</td><td>-14.79</td><td>79.81</td><td>10.98</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section narrow" aria-labelledby="sn-heading">
+      <h2 id="sn-heading">Pantheon+ directional distance-modulus residuals</h2>
+      <p>
+        Source:
+        <a href="https://github.com/PantheonPlusSH0ES/DataRelease" rel="noopener noreferrer">PantheonPlusSH0ES/DataRelease</a>
+        — file <code>Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES.dat</code>
+        (Scolnic et al. 2022; cosmology context Brout et al. 2022).
+      </p>
+      <div class="callout method-box">
+        <strong>Residual method</strong>
+        <p>
+          δμ = MU_SH0ES − μ<sub>flat ΛCDM</sub>(z<sub>HD</sub>; Ω<sub>m</sub>=0.334, H<sub>0</sub>=73.04&nbsp;km&nbsp;s<sup>−1</sup>&nbsp;Mpc<sup>−1</sup>),
+          with μ = 5&nbsp;log<sub>10</sub>(d<sub>L</sub>/Mpc)+25. Ω<sub>m</sub> from the Pantheon+ flat-ΛCDM constraint (Brout et al. 2022);
+          H<sub>0</sub> matches the SH0ES 2022 Cepheid scale used for MU_SH0ES (Riess et al. 2022).
+          Unique-CID inverse-variance averages; z<sub>HD</sub>≥0.01; Galactic |b|≥15°;
+          HEALPix NSIDE=32 inverse-variance means; Gaussian FWHM=7° smoothing;
+          extrema with 15° exclusion. Diagonal MU errors weight the map only — full covariance is required for cosmological inference.
+        </p>
+      </div>
+
+      <figure class="map-figure">
+        <img src="images/pantheonplus-residual-mollweide.png" width="1200" height="650"
+             alt="Mollweide map of Pantheon plus distance modulus residuals versus flat Lambda CDM">
+        <figcaption>
+          Smoothed Pantheon+ δμ map (Galactic Mollweide). Positive δμ: SN appears fainter/farther
+          than the fiducial flat ΛCDM prediction. Sparse high-latitude coverage is expected.
+        </figcaption>
+      </figure>
+
+      <h3>Top 10 highest δμ (7° smoothed)</h3>
+      <div class="data-table">
+        <table>
+          <thead>
+            <tr><th>#</th><th>δμ [mag]</th><th>l [°]</th><th>b [°]</th><th>RA [°]</th><th>Dec [°]</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>+0.3877</td><td>315.00</td><td>88.54</td><td>193.20</td><td>25.70</td></tr>
+            <tr><td>2</td><td>+0.3731</td><td>299.53</td><td>22.02</td><td>188.70</td><td>-40.74</td></tr>
+            <tr><td>3</td><td>+0.3301</td><td>61.87</td><td>-28.63</td><td>321.78</td><td>9.18</td></tr>
+            <tr><td>4</td><td>+0.3216</td><td>356.25</td><td>-72.39</td><td>355.28</td><td>-36.55</td></tr>
+            <tr><td>5</td><td>+0.3068</td><td>316.61</td><td>48.14</td><td>202.21</td><td>-13.74</td></tr>
+            <tr><td>6</td><td>+0.2903</td><td>30.94</td><td>20.74</td><td>263.41</td><td>7.62</td></tr>
+            <tr><td>7</td><td>+0.2780</td><td>30.79</td><td>-61.94</td><td>341.70</td><td>-24.71</td></tr>
+            <tr><td>8</td><td>+0.2696</td><td>126.56</td><td>-20.74</td><td>17.43</td><td>42.00</td></tr>
+            <tr><td>9</td><td>+0.2612</td><td>250.31</td><td>28.63</td><td>146.68</td><td>-14.82</td></tr>
+            <tr><td>10</td><td>+0.2573</td><td>45.00</td><td>31.39</td><td>258.26</td><td>23.35</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Top 10 lowest δμ (7° smoothed)</h3>
+      <div class="data-table">
+        <table>
+          <thead>
+            <tr><th>#</th><th>δμ [mag]</th><th>l [°]</th><th>b [°]</th><th>RA [°]</th><th>Dec [°]</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>-0.3604</td><td>45.00</td><td>49.70</td><td>238.56</td><td>27.91</td></tr>
+            <tr><td>2</td><td>-0.2859</td><td>346.50</td><td>44.99</td><td>222.32</td><td>-7.68</td></tr>
+            <tr><td>3</td><td>-0.2792</td><td>57.50</td><td>63.45</td><td>222.61</td><td>34.98</td></tr>
+            <tr><td>4</td><td>-0.2687</td><td>40.78</td><td>19.47</td><td>268.57</td><td>15.46</td></tr>
+            <tr><td>5</td><td>-0.2477</td><td>277.94</td><td>-64.95</td><td>28.68</td><td>-49.00</td></tr>
+            <tr><td>6</td><td>-0.2468</td><td>36.82</td><td>-73.87</td><td>355.06</td><td>-24.91</td></tr>
+            <tr><td>7</td><td>-0.2329</td><td>121.50</td><td>75.34</td><td>193.35</td><td>41.78</td></tr>
+            <tr><td>8</td><td>-0.2165</td><td>313.59</td><td>38.68</td><td>201.92</td><td>-23.44</td></tr>
+            <tr><td>9</td><td>-0.2144</td><td>264.38</td><td>15.71</td><td>147.10</td><td>-33.12</td></tr>
+            <tr><td>10</td><td>-0.2088</td><td>241.07</td><td>69.42</td><td>174.03</td><td>16.22</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section narrow">
+      <h2>Offline products &amp; caveats</h2>
+      <p>
+        Machine-readable maps and extrema JSON live in the offline EGC workspace
+        (<code>egc-offline/cmb-redshift/</code>): NPZ/FITS residual maps,
+        <code>redshift_residuals_extrema.json</code>, <code>cmb_smica_extrema.json</code>,
+        and the PNGs mirrored under <code>images/</code> on this site.
+      </p>
+      <p class="note">
+        These products are intended for CMB↔redshift overlay studies described in the
+        <a href="papers/egc-cmb-redshift-correlation-outline.html">draft outline</a>.
+        No finished cross-correlation statistic or EGC confirmation is claimed on this page.
+        Contact: <a href="mailto:tom@young01.xyz">tom@young01.xyz</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand">External Gravity Cosmology</p>
+        <p class="footer-meta">Independent research by Tom Young.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="mailto:tom@young01.xyz">tom@young01.xyz</a></li>
+        <li><a href="https://x.com/universerethink" rel="noopener noreferrer">X: @universerethink</a></li>
+        <li><a href="reading.html">Citations &amp; DOIs</a></li>
+      </ul>
+      <p class="footer-copy">© Tom Young. Reference map products — no fabricated correlation proofs.</p>
+    </div>
+  </footer>
+  <script src="js/nav.js" defer></script>
+</body>
+</html>

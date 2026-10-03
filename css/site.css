@@ -151,6 +151,6 @@ main { flex: 1; }
 @media (max-width: 420px) {
   .brand img { display: none; }
   .brand span { font-size: 1rem; }
-  .nav { gap: 1rem; }
+  .nav { gap: 0.35rem 0.9rem; flex-wrap: wrap; justify-content: flex-end; }
   .paper { padding: 1.2rem 1.15rem; }
 }

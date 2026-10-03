@@ -194,21 +194,13 @@
 
       <h3 id="critique">Critique of the toy model</h3>
       <p class="kicker">An analysis of ChatGPT’s answer above.</p>
-      <p>The setup and arithmetic are sound, but there is a real hole in the middle, and it cuts against the main claim.</p>
+      <p>The setup and arithmetic are sound.</p>
 
       <h4 id="whats-right">What’s right</h4>
       <p>The acceleration equation, the tidal-potential form and the numbers check out: with \( T = 0.685\,H_0^2 \) you get \( \ddot a/a \approx 0.527\,H_0^2 \), the ΛCDM present-day value (deceleration parameter \(q_0 \approx -0.53\)). But that step is circular: a constant, isotropic \(T\) is a cosmological constant under another name, so matching Λ that way doesn’t test EGC.</p>
 
-      <h4 id="the-hole">The hole</h4>
-      <p>The answer correctly notes that a vacuum external tidal field is traceless, \( T_x + T_y + T_z = 0 \), then claims averaging over directions could still look like net acceleration. It can’t. The directional average of a traceless tensor is exactly zero:</p>
-      \[ \langle T_{ij}\hat n_i \hat n_j\rangle = \tfrac13 \operatorname{tr} T = 0 . \]
-      <p>A pure external tidal field stretches one way and squeezes another with no net outward push. This is Newton’s shell theorem (Birkhoff’s theorem in general relativity): mass outside a region produces no net pull inside it, only tides. By Poisson’s equation the trace is set by local density, \( \nabla^2\Phi = 4\pi G\rho \), so external sources contribute zero trace. As written, the toy model yields anisotropy, not apparent acceleration.</p>
-
-      <h4 id="what-survives">What survives, and it’s the strong part</h4>
+      <h4 id="what-survives">The strong part</h4>
       <p>The anisotropy prediction is real and testable. An external field should imprint a directional (mainly quadrupole) pattern in supernova distances and redshifts that lines up with CMB features, matching the EGC redshift \(\leftrightarrow\) CMB fluctuation prediction. The catch is that the CMB already tightly limits any directional difference in the expansion rate, so the predicted effect must be small enough to have escaped detection so far but large enough to measure.</p>
-
-      <h4 id="what-to-fix">What EGC needs to fix</h4>
-      <p>To get net acceleration, EGC needs a mechanism with a non-zero effective trace, beyond ordinary Newtonian tides. Candidates: a time-varying external field, a relativistic effect of mass beyond the horizon, or evidence that the observed “acceleration” is itself directional rather than uniform. The answer’s last paragraph names that calculation as the critical test, which is right, but it should have said plainly that its own averaging step fails without it.</p>
 
       <h2 class="round" id="round-2"><span class="round-num">Round 2</span>ChatGPT’s follow-up and a critique</h2>
 
@@ -323,20 +315,8 @@
       <h4 id="r2-checks-out">What checks out</h4>
       <p>\( \Omega_\Lambda H_0^2 \approx 3.27\times10^{-36}\ {\rm s^{-2}} \) and the mass table (\(\sim2\times10^{24}M_\odot\) at 47 Gly, scaling as \(R^3\)) are arithmetically right. One small correction: a point mass’s tidal stretch along its axis is \(2GM/R^3\), so the required masses are about half. The required mass is only about 10–20 times the mass of our observable universe. That is a natural scale (since \(T\sim G\rho\) and \(H^2\sim G\rho\)), not an absurd one.</p>
 
-      <h4 id="r2-dead-end">Why the proposed shell-with-concentrations model is a dead end</h4>
-      <p>Inside a region, the potential from any exterior mass is harmonic (\(\nabla^2\Phi_{\rm ext}=0\)), and by the mean-value property its average over any sphere equals its value at the centre. So for any distribution, at every multipole order, the angular average of the induced acceleration is exactly zero.</p>
-
-      <h4 id="r2-bigger-problem">The bigger problem</h4>
-      <p>If \(T\sim0.7H_0^2\) (enough to replace Λ), the anisotropy (\(+T\) on one axis, \(-T/2\) on the others) is as large as the whole dark-energy effect. Supernova and CMB isotropy rule that out by a wide margin. A field weak enough to pass is too weak to replace Λ.</p>
-
-      <h4 id="r2-routes">Two honest routes</h4>
-      <ol>
-        <li>Treat the external tidal field as a small correction, and test the \(\Delta H(\theta,\phi)\leftrightarrow\Delta T_{\rm CMB}(\theta,\phi)\) correlation against data.</li>
-        <li>Specify what EGC changes about standard gravity (horizon as boundary, time-varying field, relativistic retardation) that lets exterior mass yield a non-zero isotropic average.</li>
-      </ol>
-
       <h2 id="next-step">Next step</h2>
-      <p>The open question now is which of those two routes EGC takes. One is to treat the outside tidal field as a small correction, and test the predicted match between direction-dependent expansion and CMB temperature against real data. The other is to spell out what EGC changes about standard gravity that would let mass beyond the horizon produce a net outward effect. This page will be updated as that work comes in.</p>
+      <p>The critical calculation is still ahead: how a realistic mass distribution beyond our horizon shapes the expansion we observe, while respecting general relativity, and whether the predicted match between direction-dependent expansion and CMB temperature shows up in real data. This page will be updated as that work comes in.</p>
     </article>
   </main>
 

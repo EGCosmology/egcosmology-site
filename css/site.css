@@ -148,6 +148,10 @@ main { flex: 1; }
   .block p { font-size: 1.02rem; }
 }
 
+@media (max-width: 759px) {
+  .nav { flex-wrap: wrap; justify-content: flex-end; row-gap: 0.35rem; }
+}
+
 @media (max-width: 420px) {
   .brand img { display: none; }
   .brand span { font-size: 1rem; }
